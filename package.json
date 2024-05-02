@@ -1,0 +1,19 @@
+{
+  "name": "drive-upload-service-account",
+  "version": "1.0.0",
+  "description": "To be added",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshat-bhansali/drive-upload-service-account.git"
+  },
+  "author": "Akshat Bhansali",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/akshat-bhansali/drive-upload-service-account/issues"
+  },
+  "homepage": "https://github.com/akshat-bhansali/drive-upload-service-account#readme"
+}
