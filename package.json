@@ -1,6 +1,5 @@
 {
   "name": "drive-upload-service-account",
-  "type": "module",
   "version": "2.5.0",
   "description": "To be added",
   "main": "index.js",
