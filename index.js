@@ -2,7 +2,7 @@ import { google } from 'googleapis';
 import fs from 'fs';
 
 
-export async function fileUploader(keyFileLocation,parentFileName,files,fileName){
+export async function fileUploader(keyFileLocation,parentFileName,files){
     try{
         const auth = new google.auth.GoogleAuth ({
             keyFile: keyFileLocation,
@@ -16,7 +16,7 @@ export async function fileUploader(keyFileLocation,parentFileName,files,fileName
                     const file = files[i];
                     const response = await drive.files.create({
                         requestBody: {
-                            name: fileName, 
+                            name: file.originalname, 
                             mimeType: file.mimetype,
                             parents: [parentFileName],
                         },
