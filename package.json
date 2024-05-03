@@ -19,6 +19,7 @@
   "homepage": "https://github.com/akshat-bhansali/drive-upload-service-account#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "googleapis": "^136.0.0"
+    "googleapis": "^136.0.0",
+    "stream": "^0.0.2"
   }
 }
