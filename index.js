@@ -26,7 +26,7 @@ export async function fileUploader(keyFileLocation,parentFileName,files){
                     })
                     uploadedFiles.push(response.data);
                 }
-                res.json({ files: uploadedFiles });
+                // res.json({ files: uploadedFiles });
                 return(uploadedFiles);
     }catch (e){
         console.log(e);
