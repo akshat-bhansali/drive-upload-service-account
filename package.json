@@ -1,5 +1,6 @@
 {
   "name": "drive-upload-service-account",
+  "type": "module",
   "version": "1.0.0",
   "description": "To be added",
   "main": "index.js",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/akshat-bhansali/drive-upload-service-account/issues"
   },
-  "homepage": "https://github.com/akshat-bhansali/drive-upload-service-account#readme"
+  "homepage": "https://github.com/akshat-bhansali/drive-upload-service-account#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "googleapis": "^136.0.0"
+  }
 }
