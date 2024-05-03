@@ -1,7 +1,7 @@
 const { google } = require("googleapis");
 const stream = require("stream");
 
-export async function fileUploader(keyFileLocation, parentFileName, files) {
+async function fileUploader(keyFileLocation, parentFileName, files) {
   try {
     const auth = new google.auth.GoogleAuth({
       keyFile: keyFileLocation,
@@ -34,3 +34,6 @@ export async function fileUploader(keyFileLocation, parentFileName, files) {
     throw e;
   }
 }
+
+
+module.exports = { fileUploader };
