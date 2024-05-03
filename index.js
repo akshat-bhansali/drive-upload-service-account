@@ -1,7 +1,7 @@
 const { google } = require("googleapis");
 const stream = require("stream");
 
-async function fileUploader(keyFileLocation, parentFileName, files) {
+async function fileUploader(keyFileLocation, parentId, files) {
   try {
     const auth = new google.auth.GoogleAuth({
       keyFile: keyFileLocation,
@@ -20,7 +20,7 @@ async function fileUploader(keyFileLocation, parentFileName, files) {
         requestBody: {
           name: file.originalname,
           mimeType: file.mimetype,
-          parents: [parentFileName],
+          parents: [parentId],
         },
         media: {
           body: bufferStream,
