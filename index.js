@@ -1,5 +1,6 @@
-const {google} = require('googleapis')
-const fs = require('fs')
+import { google } from 'googleapis';
+import fs from 'fs';
+
 
 export async function fileUploader(keyFileLocation,parentFileName,files,fileName){
     try{
