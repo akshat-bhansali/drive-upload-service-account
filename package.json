@@ -17,7 +17,10 @@
     "service",
     "account",
     "files",
-    "auth"
+    "auth",
+    "server",
+    "googleapis",
+    "google drive"
   ],
   "author": "Akshat Bhansali",
   "license": "Apache-2.0",
