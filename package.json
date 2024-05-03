@@ -1,0 +1,35 @@
+{
+  "name": "drive-upload-service-account",
+  "version": "2.7.4",
+  "description": "A lightweight npm package for uploading files to Google Drive using service account authentication. Easily integrate file uploading functionality into your Node.js applications with support for specifying the parent folder in Google Drive.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshat-bhansali/drive-upload-service-account.git"
+  },
+  "keywords": [
+    "node",
+    "google",
+    "drive",
+    "service",
+    "account",
+    "files",
+    "auth",
+    "server",
+    "googleapis",
+    "google drive"
+  ],
+  "author": "Akshat Bhansali",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/akshat-bhansali/drive-upload-service-account/issues"
+  },
+  "homepage": "https://github.com/akshat-bhansali/drive-upload-service-account#readme",
+  "dependencies": {
+    "googleapis": "^136.0.0",
+    "stream": "^0.0.2"
+  }
+}
