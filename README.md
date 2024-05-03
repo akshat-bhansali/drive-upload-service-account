@@ -6,7 +6,9 @@ This npm package, `drive-upload-service-account`, provides functionality to uplo
 
 To install the package, use npm:
 
-```npm i drive-upload-service-account```
+```bash
+npm i drive-upload-service-account
+```
 
 # Usage
 
@@ -65,13 +67,17 @@ app.listen(8080, () => {
 
 To build the project, use the following command:
 
-```npm run build```
+```bash
+npm run build
+```
 
 # Test
 
 To run tests, use the following command:
 
-```npm run test```
+```bash
+npm run test
+```
 
 # Contribute
 
