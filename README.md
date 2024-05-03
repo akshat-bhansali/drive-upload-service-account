@@ -35,6 +35,8 @@ Before using the package, you need to follow these steps:
 1. Go to [Google Cloud Console](https://console.cloud.google.com/apis/dashboard) and enable the Google Drive API.
 2. Navigate to [Credentials](https://console.cloud.google.com/apis/credentials) in the Cloud Console.
 3. Create service account credentials and download the JSON file.
+4. Go to [Google Drive](https://drive.google.com) and select the folder you want to store your data into.
+5. In the URL https://drive.google.com/drive/u/0/folders/parentFolderId, use this parentFolderId in the parentId variable.
 
 Define a route for file upload:
 
@@ -61,6 +63,30 @@ Finally, start the server:
 app.listen(8080, () => {
   console.log(`Server is running on port 8080`);
 });
+```
+
+To upload files from the frontend, you can use the following function:
+
+```javascript
+const handleFileupload = async () => {
+    const files = fileInputRef.current.files;
+    if (files.length > 0) {
+      const formData = new FormData();
+      for (let i = 0; i < files.length; i++) {
+        formData.append("files", files[i]);
+      }
+      try {
+        const response = await fetch("http://localhost:8080/upload", {
+          method: "POST",
+          body: formData,
+        });
+        const data = await response.json();
+        console.log("Uploaded files:", data.files);
+      } catch (e) {
+        console.log(e);
+      }
+    }
+};
 ```
 
 # Build
